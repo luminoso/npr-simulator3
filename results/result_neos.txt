@@ -1,0 +1,85 @@
+CPLEX> New value for default parallel thread count: 4
+CPLEX> Problem 'cplex.lp' read.
+Read time = 0.01 sec. (0.03 ticks)
+CPLEX> Tried aggregator 1 time.
+Reduced MIP has 292 rows, 292 columns, and 771 nonzeros.
+Reduced MIP has 292 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.46 ticks)
+Found incumbent of value 230.000000 after 0.00 sec. (0.61 ticks)
+Probing time = 0.01 sec. (0.17 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 292 rows, 292 columns, and 771 nonzeros.
+Reduced MIP has 292 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.46 ticks)
+Probing time = 0.00 sec. (0.17 ticks)
+Clique table members: 292.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.07 sec. (0.71 ticks)
+
+Nodes                                         Cuts/
+Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          230.0000        0.0000           100.00%
+*     0+    0                           60.0000        0.0000           100.00%
+*     0     0      integral     0       28.0000       28.0000      159    0.00%
+Elapsed time = 0.11 sec. (2.54 ticks, tree = 0.00 MB, solutions = 3)
+
+Root node processing (before b&c):
+Real time             =    0.11 sec. (2.55 ticks)
+Parallel b&c, 4 threads:
+Real time             =    0.00 sec. (0.00 ticks)
+Sync time (average)   =    0.00 sec.
+Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.11 sec. (2.55 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  2.8000000000e+01
+Solution time =    0.14 sec.  Iterations = 159  Nodes = 0
+Deterministic time = 2.55 ticks  (17.89 ticks/sec)
+
+CPLEX> Incumbent solution
+Variable Name           Solution Value
+x9                            1.000000
+x14                           1.000000
+x19                           1.000000
+x30                           1.000000
+y6,14                         1.000000
+y7,19                         1.000000
+y8,9                          1.000000
+y9,9                          1.000000
+y10,30                        1.000000
+y11,9                         1.000000
+y12,14                        1.000000
+y13,14                        1.000000
+y14,14                        1.000000
+y15,14                        1.000000
+y16,14                        1.000000
+y17,19                        1.000000
+y18,19                        1.000000
+y19,19                        1.000000
+y20,19                        1.000000
+y21,9                         1.000000
+y22,9                         1.000000
+y23,9                         1.000000
+y24,9                         1.000000
+y25,9                         1.000000
+y26,9                         1.000000
+y27,9                         1.000000
+y28,30                        1.000000
+y29,30                        1.000000
+y30,30                        1.000000
+y31,30                        1.000000
+y32,30                        1.000000
+y33,14                        1.000000
+y34,14                        1.000000
+y35,14                        1.000000
+y36,14                        1.000000
+y37,14                        1.000000
+y38,14                        1.000000
+y39,14                        1.000000
+y40,14                        1.000000
+All other variables in the range 1-292 are 0.
