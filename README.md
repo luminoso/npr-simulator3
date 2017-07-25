@@ -47,9 +47,9 @@ In this case, the number of server farms and, for each farm, its location, its n
 
 ### Simulation 3.1: Single server
 
-In this simualtion, a video-streaming service is provided by a single server whose Internet connection has a capacity of *C* (in Mbps). We considered that the server provides movies on a single video format and each movie has a throughput of *M* (in Mbps). When a movie is requested by a subscriber, it starts being transmitted by the server if the resulting total throughput is within the Internet connection capacity; otherwise, the request is blocked. We also considered that movie requests are a Poisson process with an average rate of *λ* (in requests/hour) and also that the movies duration is an exponential distributed random variable with average duration *1/μ* (in minutes).
+In this simulation, a video-streaming service is provided by a single server whose Internet connection has a capacity of *C* (in Mbps). We considered that the server provides movies on a single video format and each movie has a throughput of *M* (in Mbps). When a movie is requested by a subscriber, it starts being transmitted by the server if the resulting total throughput is within the Internet connection capacity; otherwise, the request is blocked. We also considered that movie requests are a Poisson process with an average rate of *λ* (in requests/hour) and also that the movies duration is an exponential distributed random variable with average duration *1/μ* (in minutes).
 
-This simualtion was modeled using an *[M/M/m/m](https://en.wikipedia.org/wiki/M/M/c_queue)* queuing system with a capacity of *N* units and offereced load of *ρ* Earlans, where the load is composed by a flow of requests where each request is for 1 unit of the server. The EarlangB formula E(ρ,N):
+This simulation was modeled using an *[M/M/m/m](https://en.wikipedia.org/wiki/M/M/c_queue)* queuing system with a capacity of *N* units and offered load of *ρ* Earlans, where the load is composed by a flow of requests where each request is for 1 unit of the server. The EarlangB formula E(ρ,N):
 
 <p align="center"> 
 <img src="https://latex.codecogs.com/svg.latex?%5Clarge%20E%28%5Crho%2CN%29%20%3D%20%5Cfrac%7B%5Cfrac%7B%5Crho%5E%7BN%7D%7D%7BN%21%7D%7D%7B%5Csum_%7Bn%3D0%7D%5E%7BN%7D%5Cfrac%7B%5Crho%5E%7BN%7D%7D%7Bn%21%7D%7D" alt="E(\rho,N) = \frac{\frac{\rho^{N}}{N!}}{\sum_{n=0}^{N}\frac{\rho^{N}}{n!}}">
@@ -163,7 +163,7 @@ Statistical counters:
 
 #### Results examples
 
-The above simulators export and show results both in CLI and as graphic that represents it. In the graphic below [ex2b.svg](results/ex2b.svg) is the result of the bandwith reservation impact in % of blocked requests:
+The above simulators export and show results both in CLI and as graphic that represents it. In the graphic below [ex2b.svg](results/ex2b.svg) is the result of the bandwidth reservation impact in % of blocked requests:
 
 <p align="center"> 
 	<img src="https://github.com/luminoso/npr-simulator3/raw/master/doc/ex2b.svg.png">
@@ -198,7 +198,7 @@ We have a set of Autonomous Systems (ASs) and we aim to select a subset of ASs t
 | ci | OPEX cost of connecting a server farm to AS i, with 1 ≤ i ≤ n |
 | I(j) | set of Tier-2 (and Tier-3) ASs such that there is a shortest path between AS j and each AS i ∈ I(j) with at most one intermediate AS. |
 
-[NEOS server](https://neos-server.org/neos/solvers/index.html) was used to solve this this ILP problem. Sample of the ASCII file submittion with the described problem is at [ex3_minimize.lp](ex3_minimize.lp) the result of the computation is available at [result_neos.txt](results/result_neos.txt)
+[NEOS server](https://neos-server.org/neos/solvers/index.html) was used to solve this this ILP problem. Sample of the ASCII file submission with the described problem is at [ex3_minimize.lp](ex3_minimize.lp) the result of the computation is available at [result_neos.txt](results/result_neos.txt)
 
 ## License
 MIT
